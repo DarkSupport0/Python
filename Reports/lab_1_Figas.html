@@ -84,6 +84,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#встановлення-python" id="toc-встановлення-python" class="nav-link active" data-scroll-target="#встановлення-python">Встановлення Python</a></li>
   <li><a href="#робота-з-python" id="toc-робота-з-python" class="nav-link" data-scroll-target="#робота-з-python">Робота з Python</a></li>
   <li><a href="#робота-з-github" id="toc-робота-з-github" class="nav-link" data-scroll-target="#робота-з-github">Робота з GitHub</a></li>
+  <li><a href="#контрольні-запитання" id="toc-контрольні-запитання" class="nav-link" data-scroll-target="#контрольні-запитання">Контрольні запитання</a></li>
   </ul>
 </nav>
 </div>
@@ -148,11 +149,45 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="foto\ConfigUser.jpg" class="img-fluid"></p>
 <p>Наступним кроком треба ініціалізувати локальний репозиторій, для цього виконаємо наступну команду:</p>
 <p><img src="foto\GitInit.jpg" class="img-fluid"></p>
+<p>З певної версії GitHub перестав підтримувати назву гілки <em>master</em>, тому щоб перейти на потрібну гілку <em>main</em>, треба прописати наступну команду:</p>
+<p><img src="foto\GitBranch.jpg" class="img-fluid"></p>
+<p>Наступним кроком треба прив’язати віддалений(хмарний) репозиторій до локального, тому використаємо наступну команду:</p>
 <p><img src="foto\GitRemoteAdd.jpg" class="img-fluid"></p>
+<p>Для додавання нових файлів треба використати наступну команду:</p>
 <p><img src="foto\GitAdd.jpg" class="img-fluid"></p>
+<p>Для додавання змін, можна використати наступну команду(використовується з коментарем).</p>
 <p><img src="foto\GitCommit.jpg" class="img-fluid"></p>
+<p>Тепер копію локального репозиторію можна відправити у хмарний репозиторій використавши наступну команду:</p>
 <p><img src="foto\GitPush.jpg" class="img-fluid"></p>
+<p>У результаті отримаємо наступний репозиторій</p>
 <p><img src="foto\GitHubRepos.jpg" class="img-fluid"></p>
+</section>
+<section id="контрольні-запитання" class="level2">
+<h2 class="anchored" data-anchor-id="контрольні-запитання">Контрольні запитання</h2>
+<ol type="1">
+<li>У чому відмінність інтерпретатора від компілятора? Python – компілятор чи інтерпретатор?</li>
+</ol>
+<p>Компіляція - вихідна програма транслюється один раз шляхом отримання файлу, що містить машинний код, а інтерпретація – це коли користувач коду може перекладати вихідну програму щоразу, коли вона має бути запущена. Python є інтерпретатором.</p>
+<ol start="2" type="1">
+<li>Що таке IDE PyCharm?</li>
+</ol>
+<p>PyCharm — інтегроване середовище розробки для мови програмування Python, у якому можна робити, редагувати та перевіряти працездатність робочого коду.</p>
+<ol start="3" type="1">
+<li>Що таке система контроля версій (СКВ) і для чого вона призначена? У чому принципова відмінність СКВ SVN та GIT?</li>
+</ol>
+<p>Система контролю версій - це система, що записує зміни у файл або набір файлів протягом деякого часу, де можна повернутись по певної версії. Subversion зберігає інформацію в одному єдиному сховищі, яке може бути або на локальному диску або на мережевому сервері, у той час, коли у GIT можна зберігати інформацію і на сервері і на диску.</p>
+<ol start="4" type="1">
+<li>Що відбувається при виконанні команди <code>git add .</code>?</li>
+</ol>
+<p><code>git add .</code> – додає усі новостворені файли у індекс.</p>
+<ol start="5" type="1">
+<li>Що відбувається при виконанні команди <code>git commit</code>?</li>
+</ol>
+<p><code>git commit</code> – додає зміни у локальний репозиторій.</p>
+<ol start="6" type="1">
+<li>Якою Git-командою виконується розміщення локальної копії Git-репозиторію проєкта на віддаленому, що знаходиться на GitHub?</li>
+</ol>
+<p>Ця дія відбувається командою <code>git push -u [user] [branch]</code></p>
 </section>
 
 </main>
