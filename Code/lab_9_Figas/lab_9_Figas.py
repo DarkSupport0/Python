@@ -30,13 +30,3 @@
 #         index = (index+move) % 26
 #         cryptogram += alphabet[index]
 # print("You cryptogram: " + cryptogram)
-print('smith' > 'Smith')
-print('Smiths' < 'Smith')
-print('Smith' > '1000')
-print('11' < '8')
-
-s1 = '12.8'
-i = int(s1)
-s2 = str(i)
-f = float(s2)
-print(s1 == s2)
