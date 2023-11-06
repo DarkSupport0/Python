@@ -1,6 +1,7 @@
 from sys import path
 print(path)
 
+
 from lab_8_Figas.modules.module import *
 
 zeroes = [0 for i in range(5)]
